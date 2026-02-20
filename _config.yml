@@ -1,14 +1,16 @@
 title: notmoby.co.uk
-description: Blog + apps + release notes
+description: Apps, engineering notes, release logs
 theme: minima
 
-# Make URLs nice
+url: "https://www.notmoby.co.uk"
+baseurl: ""
+
 permalink: /blog/:year/:month/:day/:title/
 
-# Optional: if you later use a custom domain, this can help in local previews
-# url: "https://notmoby.co.uk"
+plugins:
+  - jekyll-sitemap
+  - jekyll-feed
 
-# Minima theme settings (simple nav)
 minima:
   skin: auto
 
