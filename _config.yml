@@ -1,6 +1,18 @@
 title: notmoby.co.uk
-description: Notes, apps, and releases
+description: Blog + apps + release notes
 theme: minima
 
-# Optional but recommended:
+# Make URLs nice
 permalink: /blog/:year/:month/:day/:title/
+
+# Optional: if you later use a custom domain, this can help in local previews
+# url: "https://notmoby.co.uk"
+
+# Minima theme settings (simple nav)
+minima:
+  skin: auto
+
+header_pages:
+  - apps.md
+  - blog.md
+  - about.md
