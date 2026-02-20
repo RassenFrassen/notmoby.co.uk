@@ -1,0 +1,6 @@
+title: notmoby.co.uk
+description: Notes, apps, and releases
+theme: minima
+
+# Optional but recommended:
+permalink: /blog/:year/:month/:day/:title/
