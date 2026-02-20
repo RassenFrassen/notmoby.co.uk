@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ site.title }}</title>
+  <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
+  <style>
+    body { font-family: -apple-system, system-ui, sans-serif; margin: 0; }
+    .hero {
+      padding: 80px 20px;
+      text-align: center;
+      background: linear-gradient(135deg,#111,#1c1c2e);
+      color: white;
+    }
+    .hero h1 { font-size: 3rem; margin-bottom: 1rem; }
+    .cta {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 24px;
+      background: #2563eb;
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+    }
+    .section {
+      padding: 60px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+  </style>
+</head>
+<body>
+
+<div class="hero">
+  <h1>notmoby.co.uk</h1>
+  <p>Apps. Automation. macOS Engineering.</p>
+  <a href="/apps/" class="cta">View Apps</a>
+</div>
+
+<div class="section">
+  <h2>Latest Posts</h2>
+  <ul>
+    {% for post in site.posts limit:5 %}
+      <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+  </ul>
+</div>
+
+</body>
+</html>
